@@ -39,7 +39,7 @@ const Home = () => {
     <div className='homePageWrapper'>
       <div className='formWrapper'>
         <img src='/3.png' className='homePageLogo' />
-        <h4 className='mainLabel'> Weclome to GS Real Time Code Editor</h4>
+        <h4 className='mainLabel'> Welcome to GS Real Time Code Editor</h4>
         <div className='inputGroup'>
           <input
             className='inputBox'
