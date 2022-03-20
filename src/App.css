@@ -1,38 +1,177 @@
-.App {
+.homePageWrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.formWrapper {
+  background: rgb(3, 33, 71);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer {
+  position: fixed;
+  bottom: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer a {
+  color: #4aee88;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputGroup {
   display: flex;
   flex-direction: column;
+}
+
+.mainLabel {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.homePageLogo {
+  height: 140px;
+}
+
+.inputBox {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  font-weight: bold;
+}
+
+.joinBtn {
+  background: #000000;
+  width: 125px;
+  margin-left: auto;
+}
+
+.joinBtn:hover {
+  background: #1b1a1a;
+}
+
+.createInfo {
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.createNewBtn {
+  color: rgb(4, 243, 24);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(3, 252, 148);
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+.portfolio:hover {
+  color: rgb(6, 128, 16);
+}
+
+.portfolio {
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  color: #fff;
+  background: #06d8a4;
+  width: 50px;
+  margin-left: auto;
+}
+
+.mainWrap {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  height: 100vh;
+}
+
+.aside {
+  /* background: #011335; */
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.asideInner {
+  flex: 1;
+}
+
+.clientsList {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.client {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+
+  flex-direction: column;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userName {
+  margin-top: 10px;
+}
+
+.logo {
+  border-bottom: 2px solid #424242;
+  padding-bottom: 10px;
+}
+
+.logoImage {
+  height: 100px;
+}
+
+.leaveBtn {
+  margin-top: 20px;
+  background: #c0411a;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.leaveBtn:hover {
+  background: #ff0101;
+}
+
+.copyBtn {
+  color: #fff;
+  background: #06d8a4;
+}
+
+.copyBtn:hover {
+  background: #08a143;
+}
+
+.CodeMirror {
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
 }
