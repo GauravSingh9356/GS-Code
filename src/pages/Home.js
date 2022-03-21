@@ -75,8 +75,11 @@ const Home = () => {
       </div>
 
       <footer>
-        <h4 onClick={() => window.open('https://gsportfolio.netlify.com')}>
-          Built With 💖~<button className='portfolio'>GS</button>
+        <h4>
+          Built With 💖 ~ &nbsp;
+          <button className='portfolio'>
+            <b>GS</b>
+          </button>
         </h4>
       </footer>
     </div>
