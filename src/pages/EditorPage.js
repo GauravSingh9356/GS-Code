@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ACTIONS from '../Actions';
 import Client from '../Components/Client';
 import Editor from '../Components/Editor';
@@ -10,6 +10,8 @@ import {
   useParams,
 } from 'react-router-dom';
 import toast from 'react-hot-toast';
+
+import 'react-responsive-modal/styles.css';
 
 const EditorPage = () => {
   const socketRef = useRef(null);
@@ -107,6 +109,7 @@ const EditorPage = () => {
             ))}
           </div>
         </div>
+        {/* <button className='btn copyBtn'>Run</button> */}
         <button className='btn copyBtn' onClick={copyRoomId}>
           Copy Room ID
         </button>
@@ -114,6 +117,7 @@ const EditorPage = () => {
           Leave
         </button>
       </div>
+
       <div className='editorWrap'>
         <Editor
           socketRef={socketRef}

@@ -5,7 +5,6 @@ import 'codemirror/mode/javascript/javascript';
 import 'codemirror/theme/erlang-dark.css';
 import 'codemirror/addon/edit/closetag';
 import 'codemirror/addon/edit/closebrackets';
-import { Socket } from 'socket.io-client';
 import ACTIONS from '../Actions';
 
 const Editor = ({ socketRef, roomId, onCodeChange }) => {
